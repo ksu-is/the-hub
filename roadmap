@@ -8,8 +8,21 @@
 - [ ] Design UI layout (Assigned: Me)
 - [ ] Build assignment tracker prototype (Assigned: Me)
   
-- Cloned a budget tracker repo
-- Installed dependencies
-- Ran main.py
-- Got error: ModuleNotFoundError
-- Fixed by installing requirements
+## Codebase Evaluation
+
+- Repository: Python Budget Tracker (found on GitHub)
+
+- I cloned the repository using GitHub Desktop
+- I opened the project folder in terminal
+- I attempted to run the program using: python main.py
+
+- I encountered an error:
+  ModuleNotFoundError: No module named 'flask'
+
+- To fix this, I installed dependencies using:
+  pip install -r requirements.txt
+
+- After installing the requirements, I ran the program again
+- The program ran successfully and displayed output in the terminal
+
+- This project could be useful for my assignment tracker because it shows how to manage and store user data
