@@ -8,3 +8,8 @@
 - [ ] Design UI layout (Assigned: Me)
 - [ ] Build assignment tracker prototype (Assigned: Me)
   
+- Cloned a budget tracker repo
+- Installed dependencies
+- Ran main.py
+- Got error: ModuleNotFoundError
+- Fixed by installing requirements
