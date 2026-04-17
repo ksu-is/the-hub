@@ -10,19 +10,13 @@
   
 ## Codebase Evaluation
 
-- Repository: Python Budget Tracker (found on GitHub)
+-Repository: BudgetBud (Python budget tracking web application)
+I cloned the repository using GitHub Desktop
+I opened the project folder and explored the file structure in the terminal and file explorer
+I reviewed the main application file (app.py) to understand how the program runs
 
-- I cloned the repository using GitHub Desktop
-- I opened the project folder in terminal
-- I attempted to run the program using: python main.py
-
-- I encountered an error:
-  ModuleNotFoundError: No module named 'flask'
-
-- To fix this, I installed dependencies using:
-  pip install -r requirements.txt
-
-- After installing the requirements, I ran the program again
-- The program ran successfully and displayed output in the terminal
-
-- This project could be useful for my assignment tracker because it shows how to manage and store user data
+I attempted to run the program using: python.app
+After reviewing the setup requirements, I determined the application is a web-based Flask project and would need to be run in a browser environment rather than a simple terminal output program
+The project structure includes multiple folders such as templates, static, and model, which suggests separation between frontend and backend logic
+The code did not fully run in my environment immediately, but I was able to understand how it is intended to function after setup
+This project is useful for my assignment tracker idea because it demonstrates how to structure a multi-file Python web application and manage user data across different components 
