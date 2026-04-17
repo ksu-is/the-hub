@@ -13,3 +13,4 @@ The Hub is an all-in-one platform designed for college students to manage assign
 ## Team Members
 - Kimora Robinson
   
+updated README
