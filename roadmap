@@ -20,3 +20,8 @@ After reviewing the setup requirements, I determined the application is a web-ba
 The project structure includes multiple folders such as templates, static, and model, which suggests separation between frontend and backend logic
 The code did not fully run in my environment immediately, but I was able to understand how it is intended to function after setup
 This project is useful for my assignment tracker idea because it demonstrates how to structure a multi-file Python web application and manage user data across different components 
+
+###
+tkinter
+as i am browsing looking for inspiration i ran across a calender made with a system called tkinter, i decided to use it to form my webpage for this assignment instead of flask or django just to see how it works 
+might switch later on 
