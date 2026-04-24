@@ -54,9 +54,20 @@ def complete(index):
     return redirect("/assignments")
 
 
-@app.route("/internships")
+@app.route("/internships", methods=["GET", "POST")
 def internships():
     global internships
+     if request.method == "POST":
+    job = request.forms["job"]
+    
+    
+        internships.append({
+            "job": job,
+            "applied":False
+            "accepted": False
+        })
+
+        return redirect("/internships")
 
     return render_template("internships.html")
 
