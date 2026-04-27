@@ -1,21 +1,74 @@
-Sprint 1 (Previous 2 Weeks)
-Identified and reviewed the BudgetBud repository.
-Cloned and explored the project structure.
-Researched Streamlit (initial exploration) but switched focus to Flask.
-Designed a basic UI layout.
-Built a prototype assignment tracker (input forms).
+## Project Roadmap
 
-Sprint 2 (Current Week)
-Explored color scheme websites for inspiration (e.g., Vistaprint AI logo tool, attached link).
-Reviewed multiple GitHub HTML/CSS examples to improve design.
-Studied CSS cheat sheets (e.g., HTMLCheatsheet.com) to strengthen styling skills.
-Improved input functionality—the "Done" button now updates assignment status.
-Applied initial color theme based on inspirations (not fully finalized).
+---
 
-Sprint 3 (Next Week)
-Refine visual design—adjust layout, spacing, and color consistency.
-Add UX details like timestamps, hover effects, and small animations.
-Integrate logo generated via Vistaprint AI tool (final branding).
-Ensure all inputs continue to work as visuals improve.
-Test the project across browsers for consistency.
-Use CSS best practices from the HTML cheat sheet to enhance the style.
+## Sprint 1 (Completed)
+
+* [x] Find and evaluate related repository (BudgetBud) **DONE**
+* [x] Clone repository and explore file structure **DONE**
+* [x] Review main application file (`app.py`) **DONE**
+* [x] Research Streamlit dashboard setup (initial idea) **DONE**
+* [x] Transition from Streamlit/Tkinter to Flask **DONE**
+* [x] Design initial UI layout (basic structure) **DONE**
+* [x] Build basic assignment tracker prototype (inputs only) **DONE**
+
+### Notes:
+
+* Learned how Flask projects are structured (`templates`, `static`, backend logic)
+* Gained initial understanding of routing and application flow
+
+---
+
+## Sprint 2 (In Progress / Recently Completed)
+
+* [x] Research color schemes for web design **DONE**
+* [x] Explore AI logo generator for branding
+
+  * Resource: https://www.vistaprint.com/logomaker/genai/3afaf865-3d23-4581-839b-168e3f780705/studio
+* [x] Review GitHub HTML/CSS projects for inspiration **DONE**
+* [x] Use HTML/CSS cheat sheets to improve styling
+
+  * Resource: https://htmlcheatsheet.com/css/
+* [x] Implement working "Done" button functionality **DONE**
+* [x] Add initial color theme to assignment tracker **DONE**
+
+### Emerging Tasks:
+
+* [ ] Improve consistency of color palette across all components
+* [ ] Refine spacing and alignment (reduce clutter)
+* [ ] Clean up CSS structure (organize classes, avoid duplication)
+
+### Notes:
+
+* Significant improvement in functionality (assignment completion works)
+* Shifted focus from backend setup → frontend usability and visuals
+* Still refining confidence with CSS layout and styling
+
+---
+
+## Sprint 3 (Planned)
+
+* [ ] Refine full visual design (layout, spacing, typography)
+* [ ] Apply consistent color system based on research
+* [] Integrate final logo into UI (from Vistaprint generator)
+* [ ] Add timestamps or due dates to assignments
+* [ ] Improve UI realism (hover effects, small interactions)
+* [ ] Ensure all inputs and buttons function correctly after styling updates
+* [ ] Test application in browser for consistency
+
+### Planned Enhancements:
+
+* [ x] Add card-based layout for assignments
+* [ ] Improve dashboard structure (sidebar + main content)
+* [ ] Polish overall user experience to resemble real productivity apps
+
+---
+
+## Ongoing Progress Tracking
+
+* [ ] Update this document after each work session
+* [ ] Mark completed tasks with **DONE**
+* [ ] Add new tasks as they emerge during development
+* [ ] Keep notes concise but reflective of actual work completed
+
+---
