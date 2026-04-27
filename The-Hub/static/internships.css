@@ -5,7 +5,6 @@ body {
     color: #430202;
 }
 
-
 .page {
     max-width: 700px;
     margin: 20px auto 60px auto;
@@ -18,33 +17,12 @@ h1 {
     color: #64242f;
     font-size: 48px;
     margin-bottom: 10px;
+    text-align: left;
 }
-
-.subtext {
-    color: #550707;
-    font-size: 16px;
-    margin-bottom: 30px;
-}
-
-
-.meta {
-    display: flex;
-    gap: 20px;
-    font-size: 14px;
-    color: #64242f;
-    margin-bottom: 30px;
-}
-
 
 .block {
     margin-bottom: 30px;
-}
-
-.block h2 {
-    font-family: 'Fredoka', sans-serif;
-    font-size: 18px;
-    color: #64242f;
-    margin-bottom: 10px;
+    text-align: left;
 }
 
 /* FORM */
@@ -70,48 +48,45 @@ button {
     padding: 10px 14px;
     border-radius: 8px;
     cursor: pointer;
+    font-size: 16px;
+    transition: 0.2s ease;
 }
 
 button:hover {
     background: #fc8f8f;
 }
 
-.item {
-    display: flex;
-    justify-content: space-between;
-    padding: 12px 0;
+/* TABLE */
+.internship-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.internship-table th, .internship-table td {
+    padding: 12px;
+    text-align: left;
     border-bottom: 1px solid rgba(0,0,0,0.08);
 }
 
-.item-left strong {
-    display: block;
+.internship-table th {
+    background-color: rgba(100, 36, 47, 0.1);
+    color: #64242f;
+    font-weight: 700;
 }
 
-.item-left span {
-    font-size: 20px;
-    color: #0e0b0b;
-}
-
-/* STATUS */
-.done {
-    color: green;
+.actions a {
+    color: #64242f;
+    text-decoration: none;
     font-weight: bold;
 }
 
-.pending {
-    color: #c0392b;
-}
-
-.item-right a {
-    margin-left: 10px;
-    color: #64242f;
-    text-decoration: none;
-}
-
-.item-right a:hover {
+.actions a:hover {
     text-decoration: underline;
 }
-
 
 .back {
     display: inline-block;

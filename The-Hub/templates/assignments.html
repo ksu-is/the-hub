@@ -2,10 +2,13 @@
 <html>
 <head>
     <title>Assignments</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/static/assignments.css">
 </head>
-
 <body>
+<img src="/static/logo.png" alt="The Hub Logo" width="200" class="logo">
 
 <div class="page">
 
@@ -15,13 +18,13 @@
         Add tasks, track progress, and stay consistent with your coursework.
     </p>
 
-    <!-- STATS (minimal, inline) -->
+
     <div class="meta">
         <span>Total: {{ total }}</span>
         <span>Completed: {{ completed }}</span>
     </div>
 
-    <!-- INPUT SECTION -->
+
     <div class="block">
         <h2>Add Assignment</h2>
 
@@ -32,15 +35,16 @@
         </form>
     </div>
 
-    <!-- LIST (not table-heavy) -->
+
     <div class="block">
         <h2>Your Work</h2>
 
         {% for i, a in assignments %}
         <div class="item">
             <div class="item-left">
-                <strong>{{ a.title }}</strong>
-                <span>{{ a.class }}</span>
+                <strong>{{ a.class }}</strong>
+                <span>{{ a.title }}</span>
+
             </div>
 
             <div class="item-right">
@@ -50,15 +54,13 @@
                     <span class="pending">Pending</span>
                 {% endif %}
 
-                <td>
-    <a href="/toggle/{{ i }}">
-        {% if a.done %}
-            Reopen
-        {% else %}
-            Complete
-        {% endif %}
-    </a>
-</td>
+                <a href="/toggle/{{ i }}">
+                    {% if a.done %}
+                        Reopen
+                    {% else %}
+                        Complete
+                    {% endif %}
+                </a>
             </div>
         </div>
         {% endfor %}

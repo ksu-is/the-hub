@@ -92,27 +92,5 @@ def accept(index):
 
 
 
-finances_list = []
-
-@app.route("/finances", methods=["GET", "POST"])
-def finances():
-    global finances_list
-
-    if request.method == "POST":
-        description = request.form["description"]
-        amount = request.form["amount"]
-        category = request.form["category"]
-
-        finances_list.append({
-            "description": description,
-            "amount": amount,
-            "category": category
-        })
-
-        return redirect("/finances")
-
-    return render_template("finances.html", finances=finances_list)
-
-
 if __name__ == "__main__":
     app.run(debug=True, port=5007)

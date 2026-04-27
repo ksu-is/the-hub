@@ -2,57 +2,67 @@
 <html>
 <head>
     <title>INTERNSHIPS</title>
-    <link rel="stylesheet" href="/static/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/internships.css">
 </head>
 <body>
-    <h1>INTERNSHIPS</h1>
-    <form method="POST">
-        <input type="text" name="job" placeholder="Company and Role" required
-        style="width: 200px; padding: 10px; font-size: 16px;">
-        <button type="submit">Add </button>
-    </form>
+    <img src="/static/logo.png" alt="The Hub Logo" width="200" class="logo">
+    <div class="page">
+        <h1>INTERNSHIPS</h1>
+        
+        <div class="block">
+            <form method="POST" class="form">
+                <input type="text" name="job" placeholder="Company and Role" required>
+                <button type="submit">Add</button>
+            </form>
+        </div>
 
-    <hr>
-    <table border="1" style="margin-left:auto;margin-right:auto;width: 44.5%;lenght: 50%;">
-        <tr>
-            <th>Job/Company</th>
-            <th>Applied</th>
-            <th>Accepted</th>
-            <th>Actions</th>
-        </tr>
-        {% for internship in internships %}
-        <tr>
-            <td>{{ internship.job }}</td>
-            <td>
-                {% if internship.applied %}
-                    ✅ Yes
-                {% else %}
-                    ❌ No
-                {% endif %}
-            </td>
-            <td>
-                {% if internship.accepted %}
-                    🎉 Yes
-                {% else %}
-                    ⏳ Pending
-                {% endif %}
-            </td>
-            <td>
-                {% if not internship.applied %}
-                    <a href="/apply/{{ loop.index0 }}">Apply</a>
-                {% endif %}
-                {% if internship.applied and not internship.accepted %}
-                    | <a href="/accept/{{ loop.index0 }}">Accept</a>
-                {% endif %}
-            </td>
-        </tr>
-        {% endfor %}
-    </table>
+        <div class="block">
+            <table class="internship-table">
+                <thead>
+                    <tr>
+                        <th>Job/Company</th>
+                        <th>Applied</th>
+                        <th>Accepted</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for internship in internships %}
+                    <tr>
+                        <td>{{ internship.job }}</td>
+                        <td>
+                            {% if internship.applied %}
+                                ✅ Yes
+                            {% else %}
+                                ❌ No
+                            {% endif %}
+                        </td>
+                        <td>
+                            {% if internship.accepted %}
+                                🎉 Yes
+                            {% else %}
+                                ⏳ Pending
+                            {% endif %}
+                        </td>
+                        <td class="actions">
+                            {% if not internship.applied %}
+                                <a href="/apply/{{ loop.index0 }}">Apply</a>
+                            {% endif %}
+                            {% if internship.applied and not internship.accepted %}
+                                {% if not internship.applied %} | {% endif %}
+                                <a href="/accept/{{ loop.index0 }}">Accept</a>
+                            {% endif %}
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
 
-     </div>
-
-    <a class="back" href="/">← Home</a>
-
-</div>
+        <a class="back" href="/">← Home</a>
+    </div>
 </body>
 </html>

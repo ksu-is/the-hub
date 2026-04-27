@@ -64,10 +64,10 @@ No environment variables are currently required to run the project.
     ├── static/             # Static assets (CSS, Images)
     │   ├── assignments.css
     │   ├── index.css
+    │   ├── internships.css
     │   └── logo.png
     └── templates/          # HTML templates
         ├── assignments.html
-        ├── finances.html
         ├── index.html
         └── internships.html
 ```
