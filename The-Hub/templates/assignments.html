@@ -1,1 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ASSIGNMENTS</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
 
+<body>
+<form method="POST">
+
+    <input type="text" name="title" placeholder="Assignment title">
+
+    <input type="text" name="class_name" placeholder="Class name">
+
+    <button type="submit">Add Assignment</button>
+
+</form>
+<h1>ASSIGNMENTS</h1>
+<p>enter your task list</p>
+
+<!-- STATS -->
+<p>Total Assignments: {{ total }}</p>
+<p>Completed: {{ completed }}</p>
+
+<!-- TABLE -->
+<table border="1" style="margin-left:auto;margin-right:auto;">
+    <tr>
+        <th>Title</th>
+        <th>Class</th>
+        <th>Status</th>
+        <th>Actions</th>
+    </tr>
+
+    {% for i, a in assignments %}
+    <tr>
+        <td>{{ a.title }}</td>
+        <td>{{ a.class }}</td>
+        <td>
+            {% if a.done %}
+                ✅ Done
+            {% else %}
+                ❌ Not Done
+            {% endif %}
+        </td>
+        <td>
+            <a href="/toggle/{{ i }}">
+                {% if a.done %} Undo {% else %} Complete {% endif %}
+            </a>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+
+<p><a href="/">Back to Home</a></p>
+
+</body>
+</html>

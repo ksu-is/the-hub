@@ -1,1 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>INTERNSHIPS</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>INTERNSHIPS</h1>
+    <form method="POST">
+        <input type="text" name="job" placeholder="Company and Role" required>
+        <button type="submit">Add Internship</button>
+    </form>
 
+    <hr>
+    <table border="1" style="margin-left:auto;margin-right:auto;">
+        <tr>
+            <th>Job/Company</th>
+            <th>Applied</th>
+            <th>Accepted</th>
+            <th>Actions</th>
+        </tr>
+        {% for internship in internships %}
+        <tr>
+            <td>{{ internship.job }}</td>
+            <td>
+                {% if internship.applied %}
+                    ✅ Yes
+                {% else %}
+                    ❌ No
+                {% endif %}
+            </td>
+            <td>
+                {% if internship.accepted %}
+                    🎉 Yes
+                {% else %}
+                    ⏳ Pending
+                {% endif %}
+            </td>
+            <td>
+                {% if not internship.applied %}
+                    <a href="/apply/{{ loop.index0 }}">Apply</a>
+                {% endif %}
+                {% if internship.applied and not internship.accepted %}
+                    | <a href="/accept/{{ loop.index0 }}">Accept</a>
+                {% endif %}
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <p><a href="/">Back to Home</a></p>
+</body>
+</html>

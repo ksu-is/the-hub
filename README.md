@@ -1,16 +1,75 @@
-# the-hub
+# The Hub
 
-
-## Description
-The Hub is an all-in-one platform designed for college students to manage assignments, finances, fitness, and internships in one place. 
+The Hub is an all-in-one platform designed for college students to manage assignments, finances, fitness, and internships in one place. It aims to streamline student life by providing a centralized dashboard for various academic and personal trackers.
 
 ## Features
-- Assignment tracker
-- Finance tracker
-- Fitness tracker
-- Internship tracker
+
+- **Assignment Tracker**: Keep track of your coursework, filter by class, and monitor your progress.
+- **Internship Tracker**: Manage internship applications and their status.
+- **Finance Tracker**: (In progress - see TODO)
+- **Fitness Tracker**: (In progress - see TODO)
+
+## Tech Stack
+
+- **Language**: Python 3
+- **Framework**: Flask (Web Framework)
+- **Frontend**: HTML, CSS (Jinja2 templates)
+
+## Requirements
+
+- Python 3.x
+- Flask
+
+## Setup & Run
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/your-username/the-hub.git
+cd the-hub
+```
+
+### 2. Install dependencies
+Currently, dependencies are not listed in a `requirements.txt` file. You can install the necessary framework manually:
+```bash
+pip install flask
+```
+*TODO: Create a requirements.txt file for easier dependency management.*
+
+### 3. Run the application
+Navigate to the source directory and run `main.py`:
+```bash
+python The-Hub/main.py
+```
+The application will be available at `http://127.0.0.1:5000/`.
+
+## Scripts
+*TODO: Add automated scripts for setup, testing, or deployment (e.g., a Makefile or shell scripts).*
+
+## Environment Variables
+No environment variables are currently required to run the project.
+*TODO: Implement configuration management using environment variables for sensitive data or environment-specific settings.*
+
+## Tests
+*TODO: Implement unit and integration tests to ensure application stability.*
+
+## Project Structure
+
+```text
+.
+├── LICENSE                 # MIT License
+├── README.md               # Project documentation
+├── roadmap                 # Development roadmap and sprint plans
+└── The-Hub/                # Source code directory
+    ├── main.py             # Entry point of the Flask application
+    └── templates/          # HTML templates and static assets
+        ├── assignments.html
+        ├── index.html
+        ├── internships.html
+        └── style.css
+```
 
 ## Team Members
 - Kimora Robinson
-  
-updated README
+
+## License
+Distributed under the MIT License. See `LICENSE` for more information.
