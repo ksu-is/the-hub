@@ -1,30 +1,74 @@
-# Project Roadmap
+## Project Roadmap
 
-## Sprint 1 (Next 2 Weeks)
+---
 
-- [ ] Find related repository and evaluate it (Assigned: Me)
-- [ ] Clone repository and get it running (Assigned: Me)
-- [ ] Research Streamlit dashboard setup (Assigned: Me)
-- [ ] Design UI layout (Assigned: Me)
-- [ ] Build assignment tracker prototype (Assigned: Me)
-  
-## Codebase Evaluation
+## Sprint 1 (Completed)
 
--Repository: BudgetBud (Python budget tracking web application)
-I cloned the repository using GitHub Desktop
-I opened the project folder and explored the file structure in the terminal and file explorer
-I reviewed the main application file (app.py) to understand how the program runs
+* [x] Find and evaluate related repository (BudgetBud) **DONE**
+* [x] Clone repository and explore file structure **DONE**
+* [x] Review main application file (`app.py`) **DONE**
+* [x] Research Streamlit dashboard setup (initial idea) **DONE**
+* [x] Transition from Streamlit/Tkinter to Flask **DONE**
+* [x] Design initial UI layout (basic structure) **DONE**
+* [x] Build basic assignment tracker prototype (inputs only) **DONE**
 
-I attempted to run the program using: python.app
-After reviewing the setup requirements, I determined the application is a web-based Flask project and would need to be run in a browser environment rather than a simple terminal output program
-The project structure includes multiple folders such as templates, static, and model, which suggests separation between frontend and backend logic
-The code did not fully run in my environment immediately, but I was able to understand how it is intended to function after setup
-This project is useful for my assignment tracker idea because it demonstrates how to structure a multi-file Python web application and manage user data across different components 
+### Notes:
 
-###
-tkinter
-as i am browsing looking for inspiration i ran across a calender made with a system called tkinter, i decided to use it to form my webpage for this assignment instead of flask or django just to see how it works 
-might switch later on 
+* Learned how Flask projects are structured (`templates`, `static`, backend logic)
+* Gained initial understanding of routing and application flow
 
-## flask
-I switch to flask, Im focusing on HTML and the CSS first to get the feel of how I want the project to look
+---
+
+## Sprint 2 (In Progress / Recently Completed)
+
+* [x] Research color schemes for web design **DONE**
+* [x] Explore AI logo generator for branding
+
+  * Resource: https://www.vistaprint.com/logomaker/genai/3afaf865-3d23-4581-839b-168e3f780705/studio
+* [x] Review GitHub HTML/CSS projects for inspiration **DONE**
+* [x] Use HTML/CSS cheat sheets to improve styling
+
+  * Resource: https://htmlcheatsheet.com/css/
+* [x] Implement working "Done" button functionality **DONE**
+* [x] Add initial color theme to assignment tracker **DONE**
+
+### Emerging Tasks:
+
+* [ ] Improve consistency of color palette across all components
+* [ ] Refine spacing and alignment (reduce clutter)
+* [ ] Clean up CSS structure (organize classes, avoid duplication)
+
+### Notes:
+
+* Significant improvement in functionality (assignment completion works)
+* Shifted focus from backend setup → frontend usability and visuals
+* Still refining confidence with CSS layout and styling
+
+---
+
+## Sprint 3 (Planned)
+
+* [ ] Refine full visual design (layout, spacing, typography)
+* [ ] Apply consistent color system based on research
+* [] Integrate final logo into UI (from Vistaprint generator)
+* [ ] Add timestamps or due dates to assignments
+* [ ] Improve UI realism (hover effects, small interactions)
+* [ ] Ensure all inputs and buttons function correctly after styling updates
+* [ ] Test application in browser for consistency
+
+### Planned Enhancements:
+
+* [ x] Add card-based layout for assignments
+* [ ] Improve dashboard structure (sidebar + main content)
+* [ ] Polish overall user experience to resemble real productivity apps
+
+---
+
+## Ongoing Progress Tracking
+
+* [ ] Update this document after each work session
+* [ ] Mark completed tasks with **DONE**
+* [ ] Add new tasks as they emerge during development
+* [ ] Keep notes concise but reflective of actual work completed
+
+---
