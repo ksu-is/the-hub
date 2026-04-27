@@ -4,10 +4,10 @@ The Hub is an all-in-one platform designed for college students to manage assign
 
 ## Features
 
-- **Assignment Tracker**: Keep track of your coursework, filter by class, and monitor your progress.
-- **Internship Tracker**: Manage internship applications and their status.
-- **Finance Tracker**: (In progress - see TODO)
-- **Fitness Tracker**: (In progress - see TODO)
+- **Assignment Tracker**: Keep track of your coursework, filter by class, and monitor your progress. (Completed)
+- **Internship Tracker**: Manage internship applications and their status. (Completed)
+- **Finance Tracker**: Manage your budget and expenses. (Completed)
+- **Fitness Tracker**: (In progress)
 
 ## Tech Stack
 
@@ -29,18 +29,17 @@ cd the-hub
 ```
 
 ### 2. Install dependencies
-Currently, dependencies are not listed in a `requirements.txt` file. You can install the necessary framework manually:
+Install the necessary dependencies using `requirements.txt`:
 ```bash
-pip install flask
+pip install -r requirements.txt
 ```
-*TODO: Create a requirements.txt file for easier dependency management.*
 
 ### 3. Run the application
 Navigate to the source directory and run `main.py`:
 ```bash
 python The-Hub/main.py
 ```
-The application will be available at `http://127.0.0.1:5000/`.
+The application will be available at `http://127.0.0.1:5007/`.
 
 ## Scripts
 *TODO: Add automated scripts for setup, testing, or deployment (e.g., a Makefile or shell scripts).*
@@ -58,14 +57,19 @@ No environment variables are currently required to run the project.
 .
 ├── LICENSE                 # MIT License
 ├── README.md               # Project documentation
+├── requirements.txt        # Python dependencies
 ├── roadmap                 # Development roadmap and sprint plans
 └── The-Hub/                # Source code directory
     ├── main.py             # Entry point of the Flask application
-    └── templates/          # HTML templates and static assets
+    ├── static/             # Static assets (CSS, Images)
+    │   ├── assignments.css
+    │   ├── index.css
+    │   └── logo.png
+    └── templates/          # HTML templates
         ├── assignments.html
+        ├── finances.html
         ├── index.html
-        ├── internships.html
-        └── style.css
+        └── internships.html
 ```
 
 ## Team Members

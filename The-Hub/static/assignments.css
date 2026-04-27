@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #dfd9d8;
+    color: #222;
+}
+
+/* PAGE = single centered column */
+.page {
+    max-width: 700px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+/* TYPOGRAPHY */
+h1 {
+    color: #64242f;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.subtext {
+    color: #444;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+/* META (small inline stats) */
+.meta {
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+    color: #64242f;
+    margin-bottom: 30px;
+}
+
+/* BLOCK = Notion "section" */
+.block {
+    margin-bottom: 30px;
+}
+
+.block h2 {
+    font-size: 18px;
+    color: #64242f;
+    margin-bottom: 10px;
+}
+
+/* FORM */
+.form {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 180px;
+}
+
+button {
+    background: #b44446;
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #fc8f8f;
+}
+
+/* LIST ITEMS (key Notion replacement for tables) */
+.item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.item-left strong {
+    display: block;
+}
+
+.item-left span {
+    font-size: 13px;
+    color: #666;
+}
+
+/* STATUS */
+.done {
+    color: green;
+    font-weight: bold;
+}
+
+.pending {
+    color: #c0392b;
+}
+
+/* ACTION LINK */
+.item-right a {
+    margin-left: 10px;
+    color: #64242f;
+    text-decoration: none;
+}
+
+.item-right a:hover {
+    text-decoration: underline;
+}
+
+/* BACK LINK */
+.back {
+    display: inline-block;
+    margin-top: 30px;
+    color: #64242f;
+    text-decoration: none;
+}

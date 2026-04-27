@@ -2,17 +2,18 @@
 <html>
 <head>
     <title>INTERNSHIPS</title>
-    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/index.css">
 </head>
 <body>
     <h1>INTERNSHIPS</h1>
     <form method="POST">
-        <input type="text" name="job" placeholder="Company and Role" required>
-        <button type="submit">Add Internship</button>
+        <input type="text" name="job" placeholder="Company and Role" required
+        style="width: 200px; padding: 10px; font-size: 16px;">
+        <button type="submit">Add </button>
     </form>
 
     <hr>
-    <table border="1" style="margin-left:auto;margin-right:auto;">
+    <table border="1" style="margin-left:auto;margin-right:auto;width: 44.5%;lenght: 50%;">
         <tr>
             <th>Job/Company</th>
             <th>Applied</th>
@@ -48,6 +49,10 @@
         {% endfor %}
     </table>
 
-    <p><a href="/">Back to Home</a></p>
+     </div>
+
+    <a class="back" href="/">← Home</a>
+
+</div>
 </body>
 </html>

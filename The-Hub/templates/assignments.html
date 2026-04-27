@@ -1,57 +1,73 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>ASSIGNMENTS</title>
-    <link rel="stylesheet" href="/static/style.css">
+    <title>Assignments</title>
+    <link rel="stylesheet" href="/static/assignments.css">
 </head>
 
 <body>
-<form method="POST">
 
-    <input type="text" name="title" placeholder="Assignment title">
+<div class="page">
 
-    <input type="text" name="class_name" placeholder="Class name">
+    <h1>Assignments</h1>
 
-    <button type="submit">Add Assignment</button>
+    <p class="subtext">
+        Add tasks, track progress, and stay consistent with your coursework.
+    </p>
 
-</form>
-<h1>ASSIGNMENTS</h1>
-<p>enter your task list</p>
+    <!-- STATS (minimal, inline) -->
+    <div class="meta">
+        <span>Total: {{ total }}</span>
+        <span>Completed: {{ completed }}</span>
+    </div>
 
-<!-- STATS -->
-<p>Total Assignments: {{ total }}</p>
-<p>Completed: {{ completed }}</p>
+    <!-- INPUT SECTION -->
+    <div class="block">
+        <h2>Add Assignment</h2>
 
-<!-- TABLE -->
-<table border="1" style="margin-left:auto;margin-right:auto;">
-    <tr>
-        <th>Title</th>
-        <th>Class</th>
-        <th>Status</th>
-        <th>Actions</th>
-    </tr>
+        <form method="POST" class="form">
+            <input type="text" name="title" placeholder="Assignment title">
+            <input type="text" name="class_name" placeholder="Class name">
+            <button type="submit">Add</button>
+        </form>
+    </div>
 
-    {% for i, a in assignments %}
-    <tr>
-        <td>{{ a.title }}</td>
-        <td>{{ a.class }}</td>
-        <td>
-            {% if a.done %}
-                ✅ Done
-            {% else %}
-                ❌ Not Done
-            {% endif %}
-        </td>
-        <td>
-            <a href="/toggle/{{ i }}">
-                {% if a.done %} Undo {% else %} Complete {% endif %}
-            </a>
-        </td>
-    </tr>
-    {% endfor %}
-</table>
+    <!-- LIST (not table-heavy) -->
+    <div class="block">
+        <h2>Your Work</h2>
 
-<p><a href="/">Back to Home</a></p>
+        {% for i, a in assignments %}
+        <div class="item">
+            <div class="item-left">
+                <strong>{{ a.title }}</strong>
+                <span>{{ a.class }}</span>
+            </div>
+
+            <div class="item-right">
+                {% if a.done %}
+                    <span class="done">Done</span>
+                {% else %}
+                    <span class="pending">Pending</span>
+                {% endif %}
+
+                <td>
+    <a href="/toggle/{{ i }}">
+        {% if a.done %}
+            Reopen
+        {% else %}
+            Complete
+        {% endif %}
+    </a>
+</td>
+            </div>
+        </div>
+        {% endfor %}
+
+    </div>
+
+    <a class="back" href="/">← Home</a>
+
+</div>
 
 </body>
 </html>

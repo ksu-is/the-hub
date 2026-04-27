@@ -2,20 +2,37 @@
 <html>
 <head>
     <title>The Hub</title>
-    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/index.css">
+
+    <style>
+        .home-buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Welcome to The Hub</h1>
-    <p>Your student productivity dashboard</p>
+    <img src="/static/logo.png" alt="The Hub Logo" width="200" class="logo">
 
-    <a href="/assignments">
-        <button>Assignments</button>
-    </a>
+    <p>
+        Stay organized. Study smarter.<br>
+        A simple hub to manage your assignments and time.
+    </p>
 
-    <a href="/internships">
-        <button>Internships</button>
-    </a>
+    <div class="home-buttons">
+        <a href="/assignments">
+            <button>Assignments</button>
+        </a>
 
+        <a href="/internships">
+            <button>Internships</button>
+        </a>
+        <a href="/finances">
+            <button>Finances</button>
+        </a>
+    </div>
 </body>
 </html>
