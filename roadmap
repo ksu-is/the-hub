@@ -1,30 +1,21 @@
-# Project Roadmap
+Sprint 1 (Previous 2 Weeks)
+Identified and reviewed the BudgetBud repository.
+Cloned and explored the project structure.
+Researched Streamlit (initial exploration) but switched focus to Flask.
+Designed a basic UI layout.
+Built a prototype assignment tracker (input forms).
 
-## Sprint 1 (Next 2 Weeks)
+Sprint 2 (Current Week)
+Explored color scheme websites for inspiration (e.g., Vistaprint AI logo tool, attached link).
+Reviewed multiple GitHub HTML/CSS examples to improve design.
+Studied CSS cheat sheets (e.g., HTMLCheatsheet.com) to strengthen styling skills.
+Improved input functionality—the "Done" button now updates assignment status.
+Applied initial color theme based on inspirations (not fully finalized).
 
-- [ ] Find related repository and evaluate it (Assigned: Me)
-- [ ] Clone repository and get it running (Assigned: Me)
-- [ ] Research Streamlit dashboard setup (Assigned: Me)
-- [ ] Design UI layout (Assigned: Me)
-- [ ] Build assignment tracker prototype (Assigned: Me)
-  
-## Codebase Evaluation
-
--Repository: BudgetBud (Python budget tracking web application)
-I cloned the repository using GitHub Desktop
-I opened the project folder and explored the file structure in the terminal and file explorer
-I reviewed the main application file (app.py) to understand how the program runs
-
-I attempted to run the program using: python.app
-After reviewing the setup requirements, I determined the application is a web-based Flask project and would need to be run in a browser environment rather than a simple terminal output program
-The project structure includes multiple folders such as templates, static, and model, which suggests separation between frontend and backend logic
-The code did not fully run in my environment immediately, but I was able to understand how it is intended to function after setup
-This project is useful for my assignment tracker idea because it demonstrates how to structure a multi-file Python web application and manage user data across different components 
-
-###
-tkinter
-as i am browsing looking for inspiration i ran across a calender made with a system called tkinter, i decided to use it to form my webpage for this assignment instead of flask or django just to see how it works 
-might switch later on 
-
-## flask
-I switch to flask, Im focusing on HTML and the CSS first to get the feel of how I want the project to look
+Sprint 3 (Next Week)
+Refine visual design—adjust layout, spacing, and color consistency.
+Add UX details like timestamps, hover effects, and small animations.
+Integrate logo generated via Vistaprint AI tool (final branding).
+Ensure all inputs continue to work as visuals improve.
+Test the project across browsers for consistency.
+Use CSS best practices from the HTML cheat sheet to enhance the style.
