@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: 'Fredoka', sans-serif;
+    font-family: 'Fredoka', "Times New Roman";
     background: #dfd9d8;
     color: #430202;
 }
@@ -12,12 +12,12 @@ body {
     padding: 0 20px;
 }
 
-/* TYPOGRAPHY */
+
 h1 {
     font-family: 'Fredoka', sans-serif;
     color: #64242f;
     font-size: 48px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .subtext {
@@ -49,27 +49,44 @@ h1 {
 
 /* FORM */
 .form {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 150px;
     gap: 10px;
-    flex-wrap: wrap;
 }
 
 input {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 8px;
-    flex: 1;
-    min-width: 180px;
     font-family: Arial, sans-serif;
 }
 
+input[name="title"] {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+input[name="class_name"] {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+input[name="due_date"] {
+    grid-column: 3;
+    grid-row: 1;
+}
+
 button {
+    grid-column: 4;
+    grid-row: 1;
     background: #b44446;
     color: white;
     border: none;
     padding: 10px 14px;
     border-radius: 8px;
     cursor: pointer;
+    align-self: start;
+    justify-self: end;
 }
 
 button:hover {
@@ -77,19 +94,34 @@ button:hover {
 }
 
 .item {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 150px;
+    gap: 10px;
     padding: 12px 0;
     border-bottom: 1px solid rgba(0,0,0,0.08);
+    align-items: center;
 }
 
-.item-left strong {
+.item-class span {
     display: block;
+    font-size: 18px;
+    color: #450912;
 }
 
-.item-left span {
-    font-size: 20px;
-    color: #0e0b0b;
+.item-title span {
+    font-size: 18px;
+    color: #450912;
+}
+
+.item-due span {
+    color: #450912;
+    font-size: 18px;
+}
+
+.item-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 /* STATUS */
@@ -112,6 +144,10 @@ button:hover {
     text-decoration: underline;
 }
 
+.delete-link:hover {
+    color: #c0392b !important;
+}
+
 
 .back {
     display: inline-block;
@@ -124,4 +160,33 @@ button:hover {
     display: block;
     margin: -60px 0 -60px -20px;
     width: 200px;
+}
+.date-text {
+    color: #64242f;
+    font-size: 14px;
+}
+.date{
+    margin-top: 10px;
+}
+.cops {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 150px;
+    gap: 10px;
+    align-items: baseline;
+    margin-bottom: 10px;
+}
+
+.mop {
+    grid-column: 1 / span 2;
+}
+
+.cop {
+    grid-column: 3;
+}
+
+.mop h2, .cop h2 {
+    margin: 0;
+}
+.form {
+    font-size: 15px;
 }

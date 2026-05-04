@@ -51,7 +51,10 @@
 * [ ] Refine full visual design (layout, spacing, typography)
 * [ ] Apply consistent color system based on research
 * [] Integrate final logo into UI (from Vistaprint generator)
-* [ ] Add timestamps or due dates to assignments
+* [x] Add timestamps or due dates to assignments **DONE**
+* [x] Print assignments in chronological order **DONE**
+* [x] Add "Delete" functionality to assignments and internships **DONE**
+* [x] Improve form validation (required fields) **DONE**
 * [ ] Improve UI realism (hover effects, small interactions)
 * [ ] Ensure all inputs and buttons function correctly after styling updates
 * [ ] Test application in browser for consistency

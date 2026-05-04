@@ -55,6 +55,7 @@
                                 {% if not internship.applied %} | {% endif %}
                                 <a href="/accept/{{ loop.index0 }}">Accept</a>
                             {% endif %}
+                            <a href="/delete_internship/{{ loop.index0 }}" class="delete-link" onclick="return confirm('Delete this entry?')">Delete</a>
                         </td>
                     </tr>
                     {% endfor %}

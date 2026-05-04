@@ -17,10 +17,12 @@ def assignments_page():
     if request.method == "POST":
         title = request.form["title"]
         class_name = request.form["class_name"]
+        due_date = request.form.get("due_date", "")
 
         assignments.append({
             "title": title,
             "class": class_name,
+            "due_date": due_date,
             "done": False
         })
 
@@ -34,6 +36,11 @@ def assignments_page():
         filtered = list(enumerate(assignments))
     else:
         filtered = [(i, a) for i, a in enumerate(assignments) if a["class"] == selected_class]
+
+
+    # Sort by due_date (chronological)
+    # Tasks without a due date are moved to the bottom
+    filtered.sort(key=lambda x: (x[1].get("due_date") == "", x[1].get("due_date")))
 
     # COUNTER
     total = len(assignments)
@@ -56,6 +63,12 @@ def toggle(index):
 def complete(index):
     if 0 <= index < len(assignments):
         assignments[index]["done"] = True
+    return redirect("/assignments")
+
+@app.route("/delete_assignment/<int:index>")
+def delete_assignment(index):
+    if 0 <= index < len(assignments):
+        assignments.pop(index)
     return redirect("/assignments")
 
 
@@ -88,6 +101,12 @@ def apply(index):
 def accept(index):
     if 0 <= index < len(internships_list):
         internships_list[index]["accepted"] = True
+    return redirect("/internships")
+
+@app.route("/delete_internship/<int:index>")
+def delete_internship(index):
+    if 0 <= index < len(internships_list):
+        internships_list.pop(index)
     return redirect("/internships")
 
 
